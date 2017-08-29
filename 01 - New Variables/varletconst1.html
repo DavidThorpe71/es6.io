@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>let and const</title>
+</head>
+<body>
+<script>
+	const names = ['David', 'Kait', 'lux'];
+
+	const fullNames = names.map(function(name) {
+		return `${name} bos`;
+	});
+
+	console.log(fullNames);
+
+
+	const fullNames2 = names.map((name) => {
+		return `${name} bos`;
+	});
+
+	console.log(fullNames2);
+
+
+	const fullNames3 = names.map(name => {
+		return `${name} bos`;
+	});
+
+	console.log(fullNames3);
+
+
+	const fullNames4 = names.map(name => `${name} bos`);
+
+	console.log(fullNames4);
+
+
+	const fullNames5 = names.map(() => `cool bos`);
+
+	console.log(fullNames5);
+
+	const sayMyName = (name) => { alert(`hello ${name}!`) }
+
+	sayMyName('David');
+
+</script>
+</body>
+</html>
