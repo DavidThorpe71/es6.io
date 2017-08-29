@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Strings!</title>
+</head>
+<body>
+<script>
+  const person = {
+  	name: 'David',
+  	job: 'Web Developer',
+  	city: "London",
+  	bio: "Hi! I'm David and I like to code!",  
+  }
+
+  const markup1 = `
+	<div class="person">
+		<h2>
+			${person.name}
+			<span class="job">${person.job}</span>
+		</h2>
+		<p class="location">${person.city}</p>
+		<p class="bio">${person.bio}</p>
+	</div>
+  `;
+
+  // document.body.innerHTML = markup1;
+
+  const dogs = [
+  	{ name: 'D-bone', age: 21 },
+  	{ name: 'BAd Mickey', age: 1 },
+  	{ name: 'Silly Jope', age: 16 }
+  ];
+
+  const markup = `
+	<ul class="dogs">
+		${dogs.map(dog => `<li>${dog.name} is ${dog.age * 7} human years old</li>`).join('')}
+	</ul>
+  `;
+
+  // document.body.innerHTML = markup;
+
+  const song = {
+  	name: 'Dying to Live',
+  	artist: 'Tupac',
+  	featuring: 'Biggie Smalls'
+  };
+
+  const markup2 = `
+	<div class="song">
+		<p>
+			${song.name} - ${song.artist}
+			${song.featuring ? `(featuring ${song.featuring})` : ''}
+		</p>
+	</div>
+  `;
+
+  document.body.innerHTML = markup2;
+</script>
+</body>
+</html>
