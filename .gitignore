@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 node_modules/
 .DS_Store
 haters/
 *.log
+=======
+node_modules/
+.DS_Store
+haters/
+*.log
+updates/
+>>>>>>> wesbos/master
