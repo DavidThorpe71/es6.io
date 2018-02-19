@@ -1,7 +1,7 @@
 export const apiKey = 'abc123';
 
-export const url = 'http://wesbos.com';
+export const url = 'davidthorpe.com';
 
-export function sayHi(name) {
-	console.log(`Hello there ${name}`);
-}
+export function sayHi (name) {
+    console.log(`hello ${name}!!`);
+};
